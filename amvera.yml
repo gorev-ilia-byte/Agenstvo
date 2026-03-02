@@ -2,14 +2,19 @@ meta:
   environment: python
   toolchain:
     name: pip
-    version: 3.10
+    version: 3.11
 
 build:
-  # Этот блок ставит системные либы и сам браузер при сборке
+  # Устанавливаем системные зависимости, чтобы Chromium мог запуститься в Linux-контейнере
   install_dependencies:
-    - apt-get update && apt-get install -y libgbm1 libnss3 libnspr4 libasound2
+    - apt-get update && apt-get install -y libgbm1 libnss3 libnspr4 libasound2 libatk-bridge2.0-0 libgtk-3-0 libx11-xcb1 libxcb-dri3-0 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6 libxrandr2 libxrender1 libxtst6 libpango-1.0-0 libcairo2 libcups2
+  
+  # Скачиваем сам движок браузера после установки библиотек из requirements.txt
   post_run:
     - playwright install chromium
 
 run:
+  # Указываем путь к папке с браузерами, чтобы Amvera не удаляла их при перезагрузке
+  persistence:
+    - /root/.cache/ms-playwright
   script: python bot_scout.py
