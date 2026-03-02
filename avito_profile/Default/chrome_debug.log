@@ -1,0 +1,6 @@
+[0302/215050.557:INFO:CONSOLE:522] "[.WebGL-0x5e64006b2300]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels", source: https://www.avito.ru/belorechensk/kvartiry/prodam-ASgBAgICAUSSA8YQ?cd=1&rooms=1,2,3,4 (522)
+[0302/215050.558:INFO:CONSOLE:777] "[.WebGL-0x5e64006b2300]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels", source: https://www.avito.ru/belorechensk/kvartiry/prodam-ASgBAgICAUSSA8YQ?cd=1&rooms=1,2,3,4 (777)
+[0302/215050.563:INFO:CONSOLE:4] "recaptchacompat disabled", source: https://hcaptcha.com/1/api.js?hl=ru&recaptchacompat=off (4)
+[0302/215050.579:INFO:CONSOLE:0] "[.WebGL-0x5e64006b2300]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels", source: https://www.avito.ru/belorechensk/kvartiry/prodam-ASgBAgICAUSSA8YQ?cd=1&rooms=1,2,3,4 (0)
+[0302/215050.584:INFO:CONSOLE:0] "[.WebGL-0x5e64006b2300]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)", source: https://www.avito.ru/belorechensk/kvartiry/prodam-ASgBAgICAUSSA8YQ?cd=1&rooms=1,2,3,4 (0)
+[0302/215050.745:INFO:CONSOLE:4] "recaptchacompat disabled", source: https://hcaptcha.com/1/api.js?hl=ru&recaptchacompat=off (4)
