@@ -1,0 +1,15 @@
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: 3.10
+
+build:
+  # Этот блок ставит системные либы и сам браузер при сборке
+  install_dependencies:
+    - apt-get update && apt-get install -y libgbm1 libnss3 libnspr4 libasound2
+  post_run:
+    - playwright install chromium
+
+run:
+  script: python bot_scout.py
